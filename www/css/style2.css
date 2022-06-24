@@ -1,0 +1,20 @@
+body
+{
+	background-color: black;
+}
+
+.maintext
+{
+	color: #136957;
+	text-align: center;/*расположение текста в данном случае по центру*/
+	font-size: 2em;/*размер шрифта в пикселях px или в em - во сколько раз больше от первоночального значения*/
+	font-style: italic;/*стиль шрифта наклоном в нормальном состояние normal*/
+	font-weight: bolder;/*жирный шрифт или bolder*/
+	font-family:Comic Sans MS ;/*указание совсем другого щрифта*/
+	text-transform:lowercase; /*uppercase,capitalize,lowercase регистр текста с какой буквы будут писаться текст*/
+  word-spacing: 20px;/*пространство между словами*/
+  letter-spacing: -2px;/*пространство между буквами*/
+  line-height: 50px;/*растояние между строками*/
+  text-decoration: none;/*выделение текста ничем*/
+  cursor: copy;/*тип мышки при наведение на текст*/
+}

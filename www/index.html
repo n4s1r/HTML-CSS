@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!--HTML 5 версии-->
+<html lang="ru">
+	<head><!-- тег head не видно конечному пользователю-->
+		<meta charset="UTF-8">	<!-- мета данные тип данных UTF-8 -->
+		<meta name="author" content="Насир Набиев"><!--просто добавил кто автор страницы-->
+		<meta name="description" content="моя тестовая страница"><!--описание сайта-->
+		<meta name="keywords" content="тест,проверка,HTML5"><!--ключевые слова для сайта-->
+
+		<title>HTML</title>
+		<link rel="stylesheet" href="css/style.css"><!--тег для подключение css CascadeStyleSheet-->
+	</head>
+	<body><!--основаная часть сайта-->
+		Начало без тега
+		<p>
+			<a name="bottom">ссылка якорь</a>
+		</p>
+		<h1><!--их 6 от h1 до h6-->
+			зоголовок  < h1 > и т.д. до < h6 >
+		</h1>
+		<p>
+			просто текст с абзаца < p > <b> жирный шрифт < b > </b> <strong> тоже жирный тег <  strong  > </strong> <!-- вроде тег b лучше strong-->
+		</p>
+		<p>
+			<em>текст курсивом < em ></em> <i> текст курсивом < i ></i>
+		</p>
+		<p>
+			<strike>перечёркнутый тег < strike ></strike>
+		</p>
+		<p>
+			H<sub>2</sub>O
+		</p>
+		<p>
+			2<sup>2</sup>
+		</p>
+		<p>
+		 	 отступы снизу одиночный тег < br > <br>
+		</p>
+		<hr> <!-- горизонтальная линия -->
+		<p>
+			<abbr title="высвечивающийся текст при наведении мыши на текст">текст для < abbr ></abbr><br>
+			<p title="высвечивающийся текст">
+				или можно просто внутри какого либо тега добавить отребут < тег title = " "  >
+			</p>
+		</p>
+		<p>
+			<address>
+				просто с курсивром < address >
+			</address>
+		</p>
+		<p>
+			<big>текст чуть чуть больше других < big ></big>
+		</p>
+		<p>
+			<small>текст чуть чуть меньше других < small ></small>
+		</p>
+<pre>function some()
+{
+ return "Some" //текст с сохранением всех отступов < pre >
+}
+</pre>
+		<code> return 0; //тег для кода </code>
+		<p>
+			<ol start="1" type="a"> <!--ol и li нужны start тип начала с какого элемента нач  и type формат начала как начать элементы  -->
+				<li>
+					элемент списка 1 < ol > < li > ... < li > < /ol >
+				</li>
+				<li>
+					элемент списка 2
+				</li>
+			</ol><!--ordered list-->
+		</p>
+		<p>
+			<ul type="square"> <!--unordered list-->
+				<li>
+					непронумерованный список < ul > < li >... 
+				</li>
+				<li>
+					непронумерованный список < ul > < li >... 
+				</li>
+				<li>
+					непронумерованный список < ul > < li >... 
+				</li>
+			</ul>
+		</p>
+		<p>
+			<a href="https://google.com" target="_blank" title="просто ссылка на google.com">просто ссылка < a  href = " ссылка " target = "_blank или _self"> </a>
+		</p>
+		<p>
+			<a href="1.html"title="сыллка на ссылкке просто тупизм" target="_blank">переход на другой html файл в той же папке просто на другой вкладке браузера </a>
+		</p>
+		<p>
+			<a href="#bottom">ссылка на якорь</a>
+		</p>
+		<img src="https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-05/samye-krasivye-vodopady-mira.jpg" alt="не прогрузилась картинка" width="500px" height="auto" title="просто картинка"><!--тег для картинок с шириной 500 пк и высотой авто-->
+		<br>
+		<img src="img/1.jpg" alt="водопад" width="500px" height="auto" title="загруженная картинка">
+		<table border="1" width="500px"><!--таблица-->
+			<thead>
+				<tr>
+					<th>Имя</th>
+					<th>Фамилия</th>
+				</tr>
+			</thead>
+			<tbody align="center">
+				<tr>
+					<td>Jhon</td>
+					<td>Dale</td>
+				</tr>
+				<tr>
+					<td>Jhon1</td>
+					<td>Dale1</td>
+				</tr>
+				<tr>
+					<td>Jhon2</td>
+					<td>Dale2</td>
+				</tr>
+			</tbody>
+			<tfoot align="center">
+				<tr>
+					<td>Last</td>
+					<td>One</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div>блочный текст тег < div ></div>
+		<span>строчный текст тег < span ></span>
+		<p>комапановка</p>
+		<div>просто <span>текст</span></div>
+		<!-- формы-->
+		<form action="" method="post"><!--method для передачи данных action указания страницы back-end для обработки данных-->
+			<label for="imyaObyekta">имя:</label> <!--в одном ряду с < input > лучше не делать < p >-->
+			<input type="text" placeholder="отображение внутри текстового поля" value="заполнение" maxlength="14" name="user_name" id="imyaObyekta"><!-- максимальная длина 14 сим. можно и disabled - неактивный и hidden - скрытый readonly - только читать user_name переменная для передачи в JS--><br>
+			<label for="pass">пароль:</label>
+			<input type="password" id="pass"><br>
+			<label for="email">email:</label>
+			<input type="email" id="email"><br>
+			<label for="url">url:</label>
+			<input type="url" id="url"><br>
+			<input type="color"><br>
+			<input type="date"><br>
+			<label for="check">выбери</label>
+			<input type="checkbox" id="check"><br>
+			<input type="radio" name="xryu"> <!--обычный тип просто для выбора одного и друго-->
+			<input type="radio" name="xryu"><br>
+			<input type="file"><br>
+			<input type="button"><!--просто  кнопка--><br>
+			<input type="submit" value="просто кнопка которая может обнавить страницу">
+			<input type="reset" value="очистить"><!--очищает все заполненные формы в странице -->
+		</form>
+		<form>
+			<textarea placeholder="веддите что то в эту часть" name="" id="" maxlength="50"></textarea><!--текстовое поле-->
+			<br>
+			<button type="reset">Готово</button>
+		</form>
+		<form>
+			<select><!--можно добавить multiple для выбора большего кол выборов и ещё можно доб size="-" сколько эл по умолчанию будут выбраны-->
+				<option disabled selected>----</option>
+				<option>BMW</option>
+				<option selected>Audi</option>
+				<option>Mercedes</option>
+			</select>
+		</form>
+		<!--простые теги-->
+		<header>Шапка < header ></header>
+		<main>Основа < main ></main>
+		<aside>боковая панель < aside ></aside>
+		<footer>конец сайта < footer ></footer>
+		<progress max="100" value="90">текст будет показан если браузер не поддерж < progress ></progress> <!--прогресс бар-->
+		<details>
+			<summary>скрытый текст</summary>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora accusantium nihil eius deserunt delectus quasi et nulla molestiae maiores enim.
+		</details>
+    <script src="js/script.js"></script><!--атребут для подключения js нужно вставить лучше под конец чтобы сайт долго не грузился -->
+	</body>
+</html>

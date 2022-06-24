@@ -1,0 +1,179 @@
+*
+{
+	font-family: sans-serif;
+	margin: auto;
+}
+
+#fixHead
+{
+	height:85px;
+	width:100%;
+	position: fixed;
+	background-color: #007765;
+	display: flex;
+}
+
+#fixHead img 
+{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding: auto;
+}
+
+#fixHead p
+{
+	float:right;
+	padding-top:24px;
+	padding-bottom:18px;
+	padding: auto;
+}
+
+#fixHead p a
+{
+  color:white; 
+	font-size: 28px; 
+	text-decoration:none;
+}
+
+#mainPhoto
+{
+	color:white ;
+	font-size:100px;
+	padding-top: 84px;
+	height:403px;
+	background-image: url('../img/image-8.png');
+	background-size: cover ;
+	display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+#zogolovok 
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 80px;
+	color:#007765;
+}
+
+#text
+{
+	width: 1110px;
+	height: 488px;
+	color:black;
+	font-size:32px;
+}
+
+#quote
+{
+	background-image: url('../img/image-9.png');
+	height:400px;
+	background-size: cover;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#zag
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size:64px;
+	color:#007765;
+}
+
+#cripto
+{
+	margin: 20px;
+	font-size:32px;
+	height:604px;
+}
+
+#cripto img
+{
+	margin-right:48px;
+}
+
+#pervoye
+{
+	display: flex;
+	height:110px;
+	width:1110px;
+}
+
+#vtoroye
+{
+	height: 223px;
+	width:1110px;
+}
+
+#team p
+{
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 54px;
+	padding-bottom:64px;
+	font-size:64px;
+	color:#007765;
+}
+
+
+#team 
+{
+	height: auto;
+	background: #EEEEEE;
+	background-size: cover;
+  text-align:center;
+}
+
+
+figure img 
+{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure
+{
+	background: #EEEEEE;
+	background-size: cover;
+	width: 350px;
+	height: 283px;
+  display:inline-block;
+}
+
+#fig
+{
+	font-style: italic;
+	font-size: 18px;
+	color:black;
+}
+
+figcaption
+{
+	font-size: 24px;
+	color:#007765;
+}
+
+#R
+{
+	clear:left;
+	height: 176px;
+	color:#FFFFFF;
+	background:#333333;
+	background-size: cover;
+}
+
+#R p
+{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	padding-top: 48px;
+	width: 540px;
+	height: 64px;
+}

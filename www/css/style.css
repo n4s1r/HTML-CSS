@@ -1,0 +1,12 @@
+body
+{
+	background-color: black;
+	color: #136351;
+	text-align: center;/*расположение текста в данном случае по центру*/
+	font-size: 2em;/*размер шрифта в пикселях px или в em - во сколько раз больше от первоночального значения*/
+	font-style: italic;/*стиль шрифта наклоном в нормальном состояние normal*/
+	font-weight: bolder;/*жирный шрифт или bolder*/
+	font-family:Comic Sans MS ;/*указание совсем другого щрифта*/
+	text-transform:lowercase; /*uppercase,capitalize,lowercase регистр текста с какой буквы будут писаться текст*/
+ letter-spacing: 8px;/*пространство между буквами*/ 
+}

@@ -1,0 +1,112 @@
+/*
+body
+{
+	color: red;
+}
+- этом случае всему тексту в теге body будет перекрашен на красный цвет 
+можно указывать и так 
+div{...} или .class{...} или #id{...} или div p{...}  или div.class{...} или div#id{...} или div.class , div#id{...}
+*/
+
+body
+{
+	/*background-color:  #3f9ab1;
+	background-image: url('1.jpg') ;
+	background-repeat: no-repeat;/*чтобы картинка не повторялась*/
+ /*background-position: center;*/
+ /*вместо всего этого можно написать в одну строчку*/
+ background: #7f9ab3 url('../img/3.jpg') no-repeat center center;
+ height: 95vh; /*95% высоты экрана*/ /*по горизонтале и по вертикале*/
+ background-size: cover;/*полное покрытие картинки всего экрана*/
+ background-attachment: fixed;/*фиксирует в одной точке не давая скручивать картинку*/
+}
+
+/*область окна а за ней картинка)*/
+/*
+#first
+{
+	background: #7f9ab3 url('1.jpg') no-repeat center center;
+ height: 500px;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+#second
+{
+	height: 2000px;
+}
+*/
+
+p.text:not(empty) /*p с классом text которые не пусты*/
+{
+ color: grey;
+}
+
+p.text:not(empty)::after /*p с классом text которые не пусты*/
+{
+ content: "Some";
+}
+
+p.text:empty::after /*p с классом text которые пусты*/
+{
+ content: attr(title); /*в качестве не выделяемого текста выводим текст из title="..."*/
+}
+
+#some_id::before /*псевдо элемент ::after не текстовая область*/
+{
+ content: '123';
+ color: darkred;
+ text-decoration: line-through;
+}
+
+p.main_link::first-line
+{
+	color: green;
+}
+
+p:first-of-type /*первый из типа*/
+{
+	text-decoration: line-through;
+}
+
+p:last-of-type /*последний из типа*/
+{
+	text-decoration: line-through;
+}
+
+.main_link
+{
+	color: red;
+	text-decoration: none;/*линия подчёркивания*/
+}
+
+.main_link:hover /*псевдо класс наведения*/
+{
+	color: blue;
+	text-decoration: underline;
+	text-decoration-color: red;
+	cursor: pointer ;/*стиль курсора после наведения можно и в качестве картинки указать курсор*/
+}
+
+.main_link:active/*при нажатии*/
+{
+	text-decoration: line-through; 
+}
+
+.main_link:visited /*просмотренная ссылка*/
+{
+ color: grey;
+}
+
+input
+{
+	color: blue;
+}
+
+input:focus /*когда фокусирован в том же поле*/
+{
+	color: red;
+}
+
+
+

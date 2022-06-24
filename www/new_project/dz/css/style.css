@@ -1,0 +1,26 @@
+body
+{
+ margin-left: 15%;
+ margin-right: 15%;
+}
+
+table , tr, th ,td
+{
+	border: 1px solid black;
+}
+
+h1
+{
+  font-size: 32px;
+}
+
+h1, h2 , h3 
+{
+  margin-top: 1.5em;
+}
+
+figure
+{
+  float: right;
+	font-style: italic;
+}

@@ -1,0 +1,121 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#some_block
+{
+	background: red;
+	color: #fff;
+	text-align: center;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50px;
+	position: fixed ; /*для того чтобы значок не исчезал при скроливании*/
+	left: 20px;
+  top: 50px;
+}
+
+.block
+{
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	background: red;
+}
+
+#first
+{
+	float: right;
+}
+/*при написании стилей блоки чередуются от указания первого стиля и до последнего*/
+#second
+{
+	float: left;
+	background-color: blue;
+}
+
+#header ,#footer
+{
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	border-bottom:4px solid silver;
+	background-color: #333;
+	color: #fff;
+	line-height: 70px;
+ margin-bottom: 50px;
+ float: left;
+}
+
+#nav
+{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#nav li 
+{
+	display: inline;
+	background: #fafafa;
+	border: 1px solid silver;
+	padding: 0 20px ;
+	cursor: pointer;
+
+}
+
+#nav li:hover
+{
+	color: #fff;
+	background: #333;
+	border-radius: 5px;
+	border-color: #333;
+}
+
+#nav li:not(:last-of-type)
+{
+	margin-right: 20px ;
+}
+
+#main 
+{
+	width: 50%;
+	margin-left: 10%;
+	background: #fafafa;
+	border: 1px solid silver;
+	padding: 20px 2.5%;
+	float: left;
+	position: relative;
+	z-index: 1;/*слой если число большое то он находится по верх других тегов*/
+}
+
+#aside
+{
+	width: 20%;
+	padding: 20px 2.5%;
+	background: #fafafa;
+	border: 1px solid silver;
+	float: left;
+	margin-left: 5%;
+	position: relative;/*разрешает двигать объект внезависимости где она находится вверх вниз влево вправо и т.д.*/
+	/*top: 10px;благодоря position: relative ;*/
+	left: -2px;
+	z-index: 0;
+}
+
+#footer
+{
+	margin-bottom: 0;
+	margin-top: 50px;
+	border-bottom: 0;
+	border-top: 4px solid silver;
+	float: left;
+}
+
+
